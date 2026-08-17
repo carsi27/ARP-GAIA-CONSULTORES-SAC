@@ -93,6 +93,9 @@ main { min-height: 60vh; }
 .field-one { width: 48%; height: 350px; left: 0; top: 40px; border-radius: 160px 160px 24px 24px; }
 .field-two { width: 48%; height: 380px; right: 0; top: 0; border-radius: 24px 160px 160px 160px; }
 .field-three { width: 48%; height: 190px; right: 12%; bottom: 0; border-radius: 120px 24px 120px 120px; }
+.field-one img { object-position: 50% 50%; }
+.field-two img { object-position: 52% 50%; }
+.field-three img { object-position: 54% 66%; }
 .field-badge { position: absolute; z-index: 2; left: -14px; bottom: 44px; width: 140px; height: 140px; display: grid; place-content: center; gap: 4px; text-align: center; border-radius: 50%; background: var(--gold); color: var(--forest-dark); border: 8px solid white; box-shadow: var(--shadow); }
 .field-badge b { font-size: 1.15rem; }
 .field-badge span { padding-inline: 16px; font-size: .65rem; }
