@@ -87,19 +87,14 @@ main { min-height: 60vh; }
 .trust-track span::before { content: "✦"; margin-right: 18px; }
 
 .about-home { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 90px; }
-.field-collage { position: relative; min-height: 520px; }
+.field-collage { position: relative; min-height: 420px; }
 .field { position: absolute; overflow: hidden; margin: 0; background: var(--soft); border: 8px solid white; box-shadow: var(--shadow); }
 .field img { width: 100%; height: 100%; object-fit: cover; image-rendering: auto; }
-.field-one { width: 48%; height: 350px; left: 0; top: 40px; border-radius: 160px 160px 24px 24px; }
-.field-two { width: 48%; height: 380px; right: 0; top: 0; border-radius: 24px 160px 160px 160px; }
-.field-three { width: 48%; height: 190px; right: 12%; bottom: 0; border-radius: 120px 24px 120px 120px; }
-.field-one img,
-.field-two img {
-  object-fit: contain;
-  object-position: center;
-  padding: 8px;
-  background: linear-gradient(145deg, #edf4eb, #dce9df);
-}
+.field-one { width: 48%; height: 190px; left: 0; top: 24px; border-radius: 120px 120px 24px 24px; }
+.field-two { width: 48%; height: 190px; right: 0; top: 0; border-radius: 24px 120px 120px 120px; }
+.field-three { width: 48%; height: 190px; right: 26%; bottom: 0; border-radius: 120px 24px 120px 120px; }
+.field-one img { object-position: center; }
+.field-two img { object-position: center; }
 .field-three img { object-position: 54% 66%; }
 .field-badge { position: absolute; z-index: 2; left: -14px; bottom: 44px; width: 140px; height: 140px; display: grid; place-content: center; gap: 4px; text-align: center; border-radius: 50%; background: var(--gold); color: var(--forest-dark); border: 8px solid white; box-shadow: var(--shadow); }
 .field-badge b { font-size: 1.15rem; }
@@ -381,9 +376,9 @@ details[open] summary i { transform: rotate(45deg); }
   .hero-specialist > span:nth-child(2) { display: none; }
   .trust-track { justify-content: flex-start; overflow-x: auto; padding: 0 20px; }
   .about-home, .finder-grid, .cta-grid, .intro-split, .area-intro, .form-layout, .quote-layout, .admin-layout, .newsletter-section > div { grid-template-columns: 1fr; gap: 48px; }
-  .field-collage { min-height: 410px; }
-  .field-one { height: 260px; }
-  .field-two { height: 280px; }
+  .field-collage { min-height: 340px; }
+  .field-one { height: 150px; }
+  .field-two { height: 150px; }
   .field-three { height: 150px; }
   .field-badge { width: 110px; height: 110px; bottom: 35px; border-width: 5px; }
   .value-points, .mission-grid { grid-template-columns: 1fr; }
