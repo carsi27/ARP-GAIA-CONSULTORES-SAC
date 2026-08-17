@@ -106,7 +106,7 @@ main { min-height: 60vh; }
 .side-gallery-right .side-photo-two { left: 0; transform: rotate(-1deg); }
 .side-gallery-right .side-photo-three { right: 6%; transform: rotate(.7deg); }
 .side-gallery-left .side-photo-two img { object-position: 38% center; }
-.side-gallery-left .side-photo-three img { object-position: 78% center; }
+.side-gallery-left .side-photo-three img { object-position: 52% center; }
 .side-gallery-right .side-photo-two img { object-position: 54% 66%; }
 .side-gallery-right .side-photo-three img { object-position: 80% center; }
 .about-copy h2 { max-width: 650px; }
