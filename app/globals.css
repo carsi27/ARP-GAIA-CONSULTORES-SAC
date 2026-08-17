@@ -157,7 +157,7 @@ main { min-height: 60vh; }
 .cta-grid h2 { max-width: 760px; }
 .cta-grid p { max-width: 700px; color: #cfe0d9; }
 .cta-logo { min-height: 320px; padding: 32px; display: flex; flex-direction: column; gap: 22px; justify-content: center; border-radius: 22px; background: #0c5342; }
-.cta-logo img { width: 210px; margin-inline: auto; border: 10px solid white; }
+.cta-logo img { width: 230px; margin-inline: auto; filter: drop-shadow(0 12px 28px rgba(0,0,0,.16)); }
 .cta-logo span { text-align: center; font-size: .82rem; color: #cfe0d9; }
 
 .site-footer { padding-top: 74px; background: var(--forest-dark); color: white; }
