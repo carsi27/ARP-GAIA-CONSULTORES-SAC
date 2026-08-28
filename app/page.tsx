@@ -10,13 +10,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return <>
     <section className="hero">
-      <img className="hero-image" src="/images/hero-andes-monitoring.webp" alt="Especialistas realizan monitoreo ambiental con una estación solar en un valle andino" fetchPriority="high" />
+      <img className="hero-image" src="/images/hero-sostenibilidad-integral.jpg" alt="Equipo multidisciplinario realiza estudios ambientales con tecnología aplicada a un territorio sostenible" fetchPriority="high" />
       <div className="hero-overlay" />
       <div className="hero-content wrap">
-        <div className="eyebrow light"><span /> Soluciones responsables para un futuro sostenible</div>
-        <h1>Soluciones ambientales integrales para proyectos sostenibles</h1>
-        <p>Ayudamos a empresas, instituciones y organizaciones a evaluar impactos, cumplir sus obligaciones y gestionar responsablemente el ambiente, el territorio y sus recursos.</p>
-        <div className="button-row"><a className="button button-gold" href="/servicios">Explorar servicios <span aria-hidden="true">↗</span></a><a className="button button-glass" href="/cotizacion">Solicitar una evaluación</a></div>
+        <div className="hero-panel">
+          <div className="eyebrow light"><span /> Soluciones responsables para un futuro sostenible</div>
+          <h1><span>Soluciones ambientales integrales</span><strong>para proyectos sostenibles</strong></h1>
+          <p>Ayudamos a empresas, instituciones y organizaciones a evaluar impactos, cumplir sus obligaciones y gestionar responsablemente el ambiente, el territorio y sus recursos.</p>
+          <div className="button-row"><a className="button button-gold" href="/servicios">Explorar servicios <span aria-hidden="true">↗</span></a><a className="button button-glass" href="/cotizacion">Solicitar una evaluación</a></div>
+        </div>
       </div>
       <a className="hero-specialist" href="/contacto"><span className="specialist-mark">AG</span><span><b>¿Necesitas orientación?</b><small>Hablar con un especialista</small></span><span aria-hidden="true">↗</span></a>
     </section>
