@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return <>
     <section className="hero">
-      <img className="hero-image" src="/images/hero-sostenibilidad-integral.jpg" alt="Equipo multidisciplinario realiza estudios ambientales con tecnología aplicada a un territorio sostenible" fetchPriority="high" />
+      <img className="hero-image" src="/images/hero-andes-monitoring.webp" alt="Especialistas realizan monitoreo ambiental con una estación solar en un valle andino" fetchPriority="high" />
       <div className="hero-overlay" />
       <div className="hero-content wrap">
         <div className="hero-panel">

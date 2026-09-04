@@ -7,6 +7,8 @@ export type Area = {
   featured: string[];
   services: string[];
   note?: string;
+  heroImage?: string;
+  heroAlt?: string;
 };
 
 export const areas: Area[] = [
@@ -16,6 +18,8 @@ export const areas: Area[] = [
     name: "Estudios e Instrumentos Ambientales",
     short: "Estudios ambientales",
     description: "Evaluamos impactos y estructuramos instrumentos claros para prevenir, manejar y dar seguimiento a los compromisos de cada proyecto.",
+    heroImage: "/images/hero-estudios-ambientales.png",
+    heroAlt: "Equipo de ARP GAIA realiza mediciones ambientales en un río de montaña",
     featured: ["Estudios de impacto ambiental", "Modificación de instrumentos", "Planes de manejo", "Supervisión ambiental de obras", "Informes de cumplimiento"],
     services: ["Diagnóstico ambiental inicial", "Evaluación ambiental preliminar", "Estudios de impacto ambiental", "Declaraciones y fichas ambientales", "Modificación de instrumentos ambientales", "Actualización de instrumentos ambientales", "Instrumentos de adecuación o regularización", "Planes de manejo ambiental", "Evaluación de alternativas", "Identificación y evaluación de impactos", "Determinación de áreas de influencia", "Elaboración e integración de líneas base", "Estrategias de manejo ambiental", "Planes de vigilancia y seguimiento", "Planes de cierre y abandono", "Evaluaciones para selección de terrenos", "Supervisión ambiental de obras", "Informes de cumplimiento", "Atención de observaciones técnicas", "Gestión de compromisos ambientales"],
   },
@@ -25,6 +29,8 @@ export const areas: Area[] = [
     name: "Monitoreo y Calidad Ambiental",
     short: "Monitoreo ambiental",
     description: "Diseñamos programas de monitoreo y organizamos información verificable sobre agua, aire, ruido, suelo, efluentes y emisiones.",
+    heroImage: "/images/hero-monitoreo-calidad-ambiental.png",
+    heroAlt: "Equipo de ARP GAIA realiza monitoreo ambiental de agua y biodiversidad en un valle forestal",
     featured: ["Monitoreo de agua", "Calidad del aire", "Ruido", "Suelo", "Efluentes y emisiones"],
     services: ["Diseño de programas de monitoreo", "Calidad de agua superficial", "Agua subterránea", "Agua potable", "Efluentes líquidos", "Calidad del aire", "Monitoreo meteorológico", "Emisiones atmosféricas", "Ruido ambiental", "Ruido ocupacional", "Calidad de suelo", "Investigación de sitios contaminados", "Sedimentos", "Olores", "Iluminación y condiciones ocupacionales", "Monitoreo biológico", "Evaluación de cumplimiento de programas", "Redes de vigilancia ambiental", "Monitoreo ambiental en obras", "Verificación de medidas correctivas", "Informes de monitoreo"],
     note: "Los análisis o mediciones que requieran acreditación serán coordinados con laboratorios y organismos competentes.",
@@ -35,6 +41,8 @@ export const areas: Area[] = [
     name: "Gestión de Residuos y Economía Circular",
     short: "Residuos y circularidad",
     description: "Ordenamos la gestión de residuos desde el diagnóstico y la trazabilidad hasta la minimización, valorización y economía circular.",
+    heroImage: "/images/hero-residuos-economia-circular.png",
+    heroAlt: "Equipo de ARP GAIA gestiona la segregación y valorización de residuos en una operación de economía circular",
     featured: ["Planes de manejo de residuos", "Residuos peligrosos", "Economía circular", "Valorización", "Gestión municipal"],
     services: ["Diagnóstico de gestión de residuos", "Inventario y caracterización", "Determinación de peligrosidad", "Plan integral de manejo", "Minimización y segregación en la fuente", "Almacenes de residuos", "Rutas internas de recolección", "Residuos peligrosos", "Residuos de construcción y demolición", "Residuos orgánicos", "Programas de reciclaje", "Alternativas de valorización", "Estudios de mercado para materiales recuperados", "Análisis de flujo de materiales", "Hoja de ruta de economía circular", "Ecodiseño", "Reducción de plásticos", "Responsabilidad extendida y recuperación posconsumo", "Auditorías", "Supervisión de almacenes y operaciones", "Trazabilidad y control documental", "Planes de contingencia", "Áreas afectadas por residuos", "Diseño conceptual de instalaciones", "Segregación y valorización municipal", "Planificación de limpieza pública", "Fortalecimiento de recicladores", "Capacitación"],
   },
@@ -44,6 +52,8 @@ export const areas: Area[] = [
     name: "Recursos Naturales y Biodiversidad",
     short: "Biodiversidad",
     description: "Integramos información biológica, forestal y territorial para comprender riesgos, conservar valores naturales y orientar decisiones.",
+    heroImage: "/images/hero-recursos-naturales-biodiversidad.png",
+    heroAlt: "Composición de especialistas realizando evaluaciones forestales, observación de aves, monitoreo con drones y registro de fauna",
     featured: ["Línea base biológica", "Evaluación de ecosistemas", "Manejo de biodiversidad", "Gestión forestal", "Restauración ecológica"],
     services: ["Diagnóstico de biodiversidad", "Línea base biológica", "Evaluación de ecosistemas", "Inventario de flora y vegetación", "Evaluación de fauna terrestre", "Evaluación hidrobiológica", "Evaluación de hábitats", "Especies amenazadas y endémicas", "Sensibilidad biológica", "Hábitats críticos", "Impactos sobre biodiversidad", "Plan de manejo de biodiversidad", "Planes de conservación", "Monitoreo de biodiversidad", "Monitoreo de ecosistemas acuáticos", "Evaluación y gestión de humedales", "Conectividad ecológica", "Fragmentación del paisaje", "Especies exóticas invasoras", "Restauración ecológica", "Rehabilitación de áreas", "Compensación de biodiversidad", "Servicios ecosistémicos", "Valoración económica", "Dependencia empresarial de la naturaleza", "Planes empresariales de biodiversidad", "Riesgos para la biodiversidad", "Impactos acumulativos", "Gestión de áreas de conservación", "Zonificación ecológica", "Manejo sostenible de recursos", "Control de erosión y recuperación de suelos", "Manejo ecológico del paisaje", "Ciencia ciudadana", "Educación en biodiversidad", "Inventarios y censos forestales", "Expedientes técnicos para desbosque", "Planes de manejo forestal", "Reforestación y restauración forestal", "Biomasa y carbono forestal", "Prevención de incendios", "Rescate y reubicación de flora y fauna", "Monitoreo con cámaras trampa", "Corredores biológicos", "Gestión forestal comunitaria", "Viveros", "Trazabilidad forestal", "Arboricultura urbana"],
   },
@@ -53,6 +63,8 @@ export const areas: Area[] = [
     name: "Cambio Climático y Sostenibilidad",
     short: "Clima y sostenibilidad",
     description: "Convertimos datos de emisiones, agua, energía y riesgos climáticos en hojas de ruta medibles y comunicaciones responsables.",
+    heroImage: "/images/hero-cambio-climatico-sostenibilidad.jpg",
+    heroAlt: "Ilustración de un planeta sostenido por una mano, dividido entre un entorno afectado por el cambio climático y un paisaje saludable",
     featured: ["Huella de carbono", "Planes de reducción", "Riesgos climáticos", "Ecoeficiencia", "Reportes de sostenibilidad"],
     services: ["Diagnóstico climático y de sostenibilidad", "Inventario de gases de efecto invernadero", "Huella de carbono de productos", "Huella de servicios, proyectos y eventos", "Huella territorial y municipal", "Control de calidad de inventarios", "Plan de reducción", "Estrategia de neutralidad", "Evaluación de compensaciones y créditos", "Diseño preliminar de proyectos de carbono", "Riesgos climáticos", "Vulnerabilidad climática", "Planes de adaptación", "Planes climáticos territoriales", "Huella hídrica", "Eficiencia hídrica", "Ecoeficiencia", "Gestión de energía", "Energías renovables", "Estrategia de sostenibilidad", "Asuntos relevantes", "Grupos de interés", "Reportes de sostenibilidad", "Evaluación ambiental, social y de gobernanza", "Evaluación de ciclo de vida", "Prevención de declaraciones ambientales engañosas", "Eventos sostenibles", "Capacitación"],
     note: "Las declaraciones de neutralidad, cero emisiones o sostenibilidad requieren alcance, metodología y evidencia verificable.",
@@ -63,6 +75,8 @@ export const areas: Area[] = [
     name: "Social y Participación Ciudadana",
     short: "Gestión social",
     description: "Diseñamos procesos de información, escucha y diálogo para comprender el territorio social y gestionar relaciones de forma responsable.",
+    heroImage: "/images/hero-social-participacion-ciudadana.png",
+    heroAlt: "Collage de educación ambiental, participación comunitaria, reforestación y jornadas ciudadanas de limpieza",
     featured: ["Participación ciudadana", "Línea base social", "Relaciones comunitarias", "Prevención de conflictos", "Mecanismos de quejas"],
     services: ["Diagnóstico social", "Línea base social", "Área de influencia social", "Mapeo de actores", "Grupos de interés", "Participación ciudadana", "Talleres y audiencias", "Oficinas de información", "Comunicación social", "Relaciones comunitarias", "Acompañamiento social de obras", "Impactos sociales", "Plan de manejo social", "Riesgos sociales y alertas tempranas", "Conflictos socioambientales", "Espacios de diálogo", "Quejas y reclamos", "Compromisos sociales", "Monitoreo social", "Monitoreo ambiental participativo", "Estudios de percepción", "Medios de vida", "Restauración de medios de vida", "Gestión social de tierras", "Planificación de reasentamiento", "Pueblos indígenas y comunidades culturalmente diferenciadas", "Interculturalidad", "Género e inclusión", "Afluencia de trabajadores", "Empleo y compras locales", "Inversión social", "Evaluación de programas", "Rumores y desinformación", "Comunicación de emergencias", "Cierre social", "Capacitación comunitaria"],
   },
@@ -71,6 +85,8 @@ export const areas: Area[] = [
     number: "07",
     name: "Legal y Cumplimiento Ambiental",
     short: "Cumplimiento ambiental",
+    heroImage: "/images/hero-legal-cumplimiento-ambiental-hd.png",
+    heroAlt: "Globo terráqueo con una planta junto a un mazo de juez y un libro abierto, símbolos de protección y cumplimiento ambiental",
     description: "Organizamos obligaciones, permisos, evidencias y acciones preventivas para fortalecer el cumplimiento y la preparación ante fiscalizaciones.",
     featured: ["Matriz legal", "Gestión de permisos", "Preparación para fiscalización", "Auditoría de cumplimiento", "Debida diligencia"],
     services: ["Diagnóstico legal", "Marco normativo", "Matriz legal", "Matriz de compromisos", "Inventario de permisos", "Permisos para nuevos proyectos", "Estrategia regulatoria", "Asistencia en certificación", "Revisión legal de instrumentos", "Gestión de permisos", "Gestión legal hídrica", "Gestión legal forestal y de fauna", "Restricciones por áreas protegidas", "Gestión legal de residuos", "Calendario de obligaciones", "Evaluación de cumplimiento", "Auditoría legal", "Plan de adecuación", "Preparación para supervisiones", "Protocolos de fiscalización", "Acompañamiento en inspecciones", "Análisis de actas", "Requerimientos de información", "Medidas administrativas", "Procedimientos sancionadores", "Informes técnico-legales", "Responsabilidad ambiental", "Incidentes y emergencias", "Debida diligencia", "Contratos", "Contratistas y proveedores", "Cambios normativos", "Sistema de cumplimiento", "Integración con sistemas de gestión", "Gestión de evidencias", "Capacitación legal", "Simulacros", "Asistencia a entidades públicas", "Denuncias ambientales"],
@@ -81,6 +97,8 @@ export const areas: Area[] = [
     number: "08",
     name: "Sistemas de Información Geográfica y Tecnología",
     short: "SIG y tecnología",
+    heroImage: "/images/hero-sig-tecnologia.jpg",
+    heroAlt: "Representación de cartografía digital y agricultura de precisión con mapas de relieve, computadora y aeronave de levantamiento geográfico",
     description: "Transformamos datos de campo, satélites, drones y sensores en cartografía, análisis territorial y herramientas para decidir mejor.",
     featured: ["Cartografía ambiental", "Imágenes satelitales", "Drones", "Geoportales", "Monitoreo territorial"],
     services: ["Diagnóstico geográfico", "Cartografía ambiental", "Georreferenciación", "Levantamientos satelitales", "Topografía de apoyo", "Imágenes satelitales", "Análisis multitemporal", "Cobertura y uso del suelo", "Monitoreo de deforestación", "Monitoreo de cuerpos de agua", "Índices de vegetación", "Fotogrametría con drones", "Inspecciones aéreas", "Superficies y volúmenes", "Modelos de elevación", "Cuencas y drenajes", "Pendientes y erosión", "Accesibilidad y rutas", "Superposición territorial", "Sensibilidad ambiental", "Áreas de influencia", "Selección multicriterio de sitios", "Corredores ecológicos", "Mapas de riesgos", "Mapas de calidad ambiental", "Geodatabases y metadatos", "Digitalización", "Integración con planos de ingeniería", "Control territorial de compromisos", "Aplicaciones de campo", "Formularios digitales", "Geoportales", "Tableros", "Alertas territoriales", "Automatización", "Sensores y monitoreo remoto", "Análisis estadístico y espacial", "Modelamiento", "Inventarios digitales", "Catastro ambiental municipal", "Seguimiento de obras", "Registro de incidentes", "Reconstrucción de emergencias", "Fotografías georreferenciadas", "Modelos tridimensionales", "Inteligencia artificial ambiental", "Capacitación"],

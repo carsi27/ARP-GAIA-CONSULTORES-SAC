@@ -7,8 +7,30 @@ type ContactConfig = { phone?: string; whatsapp?: string; email?: string; addres
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [launchingQuote, setLaunchingQuote] = useState(false);
+
+  useEffect(() => {
+    const updateHeader = () => setScrolled(window.scrollY > 18);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    return () => window.removeEventListener("scroll", updateHeader);
+  }, []);
+
+  const openQuote = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    if (launchingQuote) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      window.location.assign("/cotizacion");
+      return;
+    }
+    setLaunchingQuote(true);
+    window.setTimeout(() => window.location.assign("/cotizacion"), 520);
+  };
+
   return (
-    <header className="site-header">
+    <header className={scrolled ? "site-header is-scrolled" : "site-header"}>
       <a className="brand" href="/" aria-label="ARP GAIA CONSULTORES, inicio">
         <img src="/images/arp-gaia-logo.webp" alt="ARP GAIA CONSULTORES" />
         <span><b>ARP GAIA</b><small>CONSULTORES S.A.C.</small></span>
@@ -16,10 +38,38 @@ export function Header() {
       <button className="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded={open} onClick={() => setOpen(!open)}><span /><span /><span /></button>
       <nav className={open ? "main-nav is-open" : "main-nav"} aria-label="Navegación principal">
         <a href="/">Inicio</a><a href="/nosotros">Nosotros</a><a href="/servicios">Servicios</a><a href="/sectores">Sectores</a><a href="/proyectos">Proyectos</a><a href="/recursos">Recursos</a><a href="/contacto">Contacto</a>
-        <a className="button button-small button-gold" href="/cotizacion">Solicitar cotización <span aria-hidden="true">↗</span></a>
+        <a className={`button button-small button-gold header-quote${launchingQuote ? " is-launching" : ""}`} href="/cotizacion" onClick={openQuote}>Solicitar cotización <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
   );
+}
+
+export function ScrollEffects() {
+  useEffect(() => {
+    const targets = Array.from(document.querySelectorAll<HTMLElement>(
+      "main > section:not(.hero):not(.page-hero):not(.area-hero):not(.admin-hero):not(.legal-hero), main > article.legal-copy"
+    ));
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    targets.forEach(target => target.classList.add("scroll-reveal"));
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      targets.forEach(target => target.classList.add("is-visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -7% 0px" });
+
+    targets.forEach(target => observer.observe(target));
+    return () => observer.disconnect();
+  }, []);
+
+  return null;
 }
 
 export function Footer() {

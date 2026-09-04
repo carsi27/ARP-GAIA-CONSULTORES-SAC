@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { CookieNotice, Footer, Header, WhatsAppButton } from "./components/SiteChrome";
+import { CookieNotice, Footer, Header, ScrollEffects, WhatsAppButton } from "./components/SiteChrome";
+import { IntroExperience } from "./components/IntroExperience";
 
 export const metadata: Metadata = {
   title: { default: "ARP GAIA CONSULTORES | Consultoría ambiental en Perú", template: "%s | ARP GAIA CONSULTORES" },
@@ -21,5 +22,5 @@ const organization = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es"><body><a className="skip-link" href="#contenido">Saltar al contenido</a><Header /><main id="contenido">{children}</main><Footer /><CookieNotice /><WhatsAppButton /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }} /></body></html>;
+  return <html lang="es"><body><IntroExperience /><a className="skip-link" href="#contenido">Saltar al contenido</a><Header /><main id="contenido">{children}</main><Footer /><CookieNotice /><WhatsAppButton /><ScrollEffects /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }} /></body></html>;
 }
